@@ -9,5 +9,9 @@ const superbowlWin = (array) => {
   // array.find( function(result) { return result === "W" })
   let result = array.find( object => object.result === "W")
   //  return !!result ? result.year :undefined
-  return result
+  if (result != undefined) {
+    return result.year
+  } else {
+    return undefined
+  }
 }
